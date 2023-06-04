@@ -1,26 +1,18 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>AutoML Solutions</title>
+  <title>Classification or Regression</title>
   <style>
-    form {
-      width: 500px;
-      margin: 0 auto;
-      border: 1px solid #ccc;
-      padding: 10px;
-      box-shadow: 0 0 5px 0 #ccc;
-      margin-bottom: 20px;
-    }
-
-    input {
-      width: 200px;
-      height: 20px;
-      border: 1px solid #ccc;
-      padding: 5px;
-      border-radius: 5px;
+    body {
       font-family: sans-serif;
       font-size: 16px;
-      color: #fff;
-      margin-bottom: 10px;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 0;
     }
 
     button {
@@ -43,12 +35,8 @@
   </style>
 </head>
 <body>
-  <form action="http://127.0.0.1:5000/auto_linear_regression_output" method="post">
-    <input type="text" name="url" placeholder="Enter URL">
-    <input type="text" name="columninput" placeholder="Enter column input">
-    <input type="number" name="configurations" placeholder="Enter number of configurations">
-    <input type="number" name="rounds" placeholder="Enter number of rounds">
-    <button type="submit">Submit</button>
-  </form>
+  <h1>Choose a task</h1>
+  <button onclick="window.location='index_classification.html'">Classification</button>
+  <button onclick="window.location='index_regression.html'">Regression</button>
 </body>
 </html>
